@@ -1,9 +1,13 @@
 @media screen and (max-width: 900px) {
     nav{
-        padding: 0px 20px 0px 30px;
+        justify-content: center;
     }
     li{
-        margin-right: 0.5rem;
+        margin-right: 1rem;
+    }    
+    .lameuteAbout{ 
+        margin-left: 3%; 
+        margin-top: -10%;       
     }
   }
 
@@ -21,10 +25,26 @@
     .logo{
         margin-right: 1em;
     }
+    header{
+        align-items: center;
+        justify-content: space-around;
+        height: 70%;      
+    }
+    .lameuteAbout{      
+        width: 20rem;                
+    }
+
+    .big-title{        
+        font-size: 4rem;
+    }
+    .description{        
+        font-size: 0.7rem;
+    }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .select-menu .options {
-        left: 10rem;
-    }
+        left: 50%;
+    }    
+    
   }
