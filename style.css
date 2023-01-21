@@ -104,7 +104,7 @@ header{
 }
 .select-menu .select-btn {
   display: flex;
-  padding: 1em;
+  padding: 0.3em;
   background: #fff;
   font-weight: 400;
   border-radius: 8px;
