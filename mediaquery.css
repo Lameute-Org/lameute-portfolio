@@ -27,8 +27,7 @@
     }
     header{
         align-items: center;
-        justify-content: space-around;
-        height: 70%;      
+        justify-content: space-around;      
     }
     .lameuteAbout{      
         width: 20rem;                
