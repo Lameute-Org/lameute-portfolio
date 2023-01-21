@@ -101,6 +101,7 @@ header{
 /*dropdown*/
 .select-menu {
   display: none;
+  padding: 1em;
 }
 .select-menu .select-btn {
   display: flex;
