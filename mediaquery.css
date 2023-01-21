@@ -18,6 +18,7 @@
     nav{
         justify-content: center;
         height: 8%;
+        background-color: red;
     }
     .select-menu {
         display: block;
