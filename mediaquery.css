@@ -17,8 +17,8 @@
     }
     nav{
         justify-content: center;
-        height: 8%;
-        back-ground-color:white;
+        background-color:white;
+        
     }
     .select-menu {
         display: block;
