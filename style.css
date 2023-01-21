@@ -100,11 +100,11 @@ header{
 
 /*dropdown*/
 .select-menu {
-  display: none;
-  padding: 1em;
+  display: none;  
 }
 .select-menu .select-btn {
   display: flex;
+  padding: 1em;
   background: #fff;
   font-weight: 400;
   border-radius: 8px;
