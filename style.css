@@ -3,6 +3,14 @@
   src: url(./assets/fonts/Poppins-Regular.otf);
 }
 @font-face {
+  font-family: police_secondary;
+  src: url(./assets/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: police_ternary;
+  src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
   font-family: police_lameute;
   src: url(./assets/fonts/Hellion.ttf);
 }
@@ -17,6 +25,10 @@ body , html{
   --primary:#2D2D2D;
   --secondary:white;
   --tertiary:#E4AD72;
+  --grey: #ACACAC
+}
+p{
+  margin: 0;
 }
 
 
@@ -186,4 +198,97 @@ header{
     transform: translate3d(0, 20px, 0);
     opacity: 0;
   }
+}
+
+/*styling a section Squad*/
+.squad-section{
+  height: 100%;
+  background-image: url(./assets/images/wallpaperBak.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.title-squad{
+  font-family: police_lameute;
+  font-size: 3rem;
+  color: var(--secondary);
+}
+.card-squad-section {
+  width: 85%;
+  height: 75%;
+}
+
+.card-squad-title{
+  display: flex;
+  flex-direction: column;
+  border-left: solid 8px var(--grey);
+  padding-left: 20px;
+}
+.card-squad-name-member{
+  font-family: police_lameute;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+.card-squad-color-member{
+  font-family: police_secondary;
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+.contain-description {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+.card-squad-description{
+  font-family: police_ternary;
+  font-size: 1.1rem;
+  color: var(--grey);
+}
+
+.card-squad-desciption-contain {
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4rem;
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+.crd-sqd-dscp-contain-right {
+  display: flex;
+  justify-content: space-around;
+  width: 38%;
+}
+.crd-sqd-dscp-contain-left {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+.img-card-section {
+  width: 75%;
+}
+.txt-description{
+  font-family: police_secondary;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80%;
+  width: 48%;
+}
+
+.contain-personal-skill {
+  height: 25%;
 }
