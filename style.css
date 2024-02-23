@@ -200,103 +200,143 @@ header{
   }
 }
 
-/*styling a section Squad*/
-.squad-section{
-  height: 100%;
-  background-image: url(./assets/images/wallpaperBak.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/*project section*/
+.title-project{
+  font-family: police_lameute !important;
+  -webkit-text-stroke: 1.2px var(--tertiary);
+  color: #38373d;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+.project-icone{
+  font-size: 10rem;
+}
+.project-name{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.project-use{
+  line-height: 2rem;
+  font-style: italic;
+}
+.checkme-txt{
+  text-align: end;
+}
+.gazoo-txt{
+  text-align: start;
+}
+.project{
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding: 1rem 5rem 1rem 5rem;
+}
+.gazoo{
+  flex-direction: row-reverse;
+}
+.chk{
+  color: #008edd;
+  text-align: end;
+}
+.gaz{
+  color: #e67500;
+}
+.project-description{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  width: 50%;
 }
-.title-squad{
-  font-family: police_lameute;
-  font-size: 3rem;
-  color: var(--secondary);
+.checkme-image{
+  width: 30rem;
+  object-fit: cover;
 }
-.card-squad-section {
-  width: 85%;
-  height: 75%;
+.gazoo-image{
+  width: 15rem;
+  object-fit: cover;
 }
 
-.card-squad-title{
-  display: flex;
-  flex-direction: column;
-  border-left: solid 8px var(--grey);
-  padding-left: 20px;
-}
-.card-squad-name-member{
-  font-family: police_lameute;
-  font-size: 2rem;
+/*service section*/
+.lameuteService{
+  height: 100%;
+  background-position: 0% 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
   color: var(--secondary);
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
-.card-squad-color-member{
-  font-family: police_secondary;
+.title-service{
+  font-family: police_lameute !important;
+  -webkit-text-stroke: 1.2px var(--tertiary);
+  color: #38373d;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+.service-icon{
+  font-size: 4rem;
+  color: var(--grey);
+}
+.service-name{
+  font-weight: bold;
   font-size: 1.5rem;
   color: var(--grey);
+  text-align: center;
 }
-.contain-description {
-  height: 75%;
+.service-txt{
+  line-height: 2rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+  color: black;
+}
+.service{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-left: 30px;
-}
-.card-squad-description{
-  font-family: police_ternary;
-  font-size: 1.1rem;
-  color: var(--grey);
-}
-
-.card-squad-desciption-contain {
-  height: 95%;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  border-radius: 4rem;
-  background-color: rgba(0, 0, 0, 0.377);
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  padding: 1rem;
 }
-
-.crd-sqd-dscp-contain-right {
+.service-description{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-image{
+  display: flex;
+}
+.serviceContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 20rem); /* Three equal columns */
   justify-content: space-around;
-  width: 38%;
-}
-.crd-sqd-dscp-contain-left {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 5%;
 }
 
-.img-card-section {
-  width: 75%;
+/*footer*/
+footer{
+  padding: 5rem;
+  background-color: #07060b;
+  color: white;
 }
-.txt-description{
-  font-family: police_secondary;
-  color: var(--secondary);
-  font-size: 1rem;
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, 15rem); /* Three equal columns */
+  justify-content: space-around;
+  align-items: start;
 }
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 80%;
-  width: 48%;
+.footer-title{
+  font-weight: bold ;
+  font-size: 20px;
 }
-
-.contain-personal-skill {
-  height: 25%;
-}
-.contacts-link {
-  display: flex;
-  width: 15%;
-  justify-content: space-between;
-}
-i{
-  font-size: 1.3rem !important;
+.logo-footer{
+  width: 100px;
+  height: 100px;
 }
