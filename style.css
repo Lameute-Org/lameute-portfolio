@@ -102,6 +102,7 @@ header{
   -webkit-text-stroke: 1.2px var(--tertiary);
   text-shadow: 0px 10px rgba(0, 0, 0, 0.57);
   font-size: 6rem;
+  transition: all .4s ease-out 0s;
 }
 .description{
   text-align: center;
@@ -221,11 +222,11 @@ header{
 }
 .project-use{
   line-height: 2rem;
-  font-style: italic;
 }
-.checkme-txt{
+.checkme-txt , .lynx-txt{
   text-align: end;
 }
+
 .gazoo-txt{
   text-align: start;
 }
@@ -245,13 +246,17 @@ header{
 .gaz{
   color: #e67500;
 }
+.lyn {
+  color: #ff0000;
+  text-align: end;
+}
 .project-description{
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 .checkme-image{
-  width: 30rem;
+  width: 27rem;
   object-fit: cover;
 }
 .gazoo-image{
@@ -268,7 +273,7 @@ header{
   z-index: 0;
   color: var(--secondary);
   margin-bottom: 100px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 .title-service{
   font-family: police_lameute !important;
@@ -292,10 +297,10 @@ header{
 }
 .service-txt{
   line-height: 2rem;
-  font-style: italic;
   text-align: center;
   margin-top: 1rem;
   color: black;
+  font-size: 15px;
 }
 .service{
   display: flex;
@@ -305,7 +310,13 @@ header{
   background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
   padding: 1rem;
+  transition: all .4s ease-out 0s;
 }
+
+.service:hover{
+  transform: translateY(-20px);
+}
+
 .service-description{
   display: flex;
   flex-direction: column;
@@ -316,10 +327,18 @@ header{
 }
 .serviceContainer{
   display: grid;
-  grid-template-columns: repeat(3, 20rem); /* Three equal columns */
+  grid-template-columns: repeat(3, 18rem); /* Three equal columns */
   justify-content: space-around;
 }
-
+.des-icon, .design{
+  color: #ff0000; 
+}
+.dev-icon, .dev{
+  color: #008edd;
+}
+.trans-d-icon, .trans-d{
+  color: #e67500;
+}
 /*footer*/
 footer{
   padding: 5rem;
@@ -328,7 +347,7 @@ footer{
 }
 .footer-container{
   display: grid;
-  grid-template-columns: repeat(4, 15rem); /* Three equal columns */
+  grid-template-columns: repeat(4, auto); /* Three equal columns */
   justify-content: space-around;
   align-items: start;
 }
@@ -339,4 +358,8 @@ footer{
 .logo-footer{
   width: 100px;
   height: 100px;
+}
+.footer-item{
+  display: flex;
+  justify-content: center;
 }
