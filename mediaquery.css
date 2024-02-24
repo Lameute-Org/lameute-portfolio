@@ -9,6 +9,31 @@
         margin-left: 3%; 
         margin-top: -10%;       
     }
+    .project-name{
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .checkme-txt , .lynx-txt, .gazoo-txt{
+        font-size: 13px;
+      }
+      .checkme-image{
+        width: 22rem;
+      }
+      .gazoo-image {
+        width: 10rem;
+      }
+      .project {
+        padding: 1rem 3rem 1rem 3rem;
+      }
+      .service-name {
+        font-size: 0.85rem;
+      }
+      .serviceContainer {
+        grid-template-columns: repeat(3, 14rem);
+      }
+      .service-txt {
+        font-size: 12px;
+      }
   }
 
   @media screen and (max-width: 700px) {
@@ -41,6 +66,52 @@
     .description{        
         font-size: 0.7rem;
     }
+    .project-description {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .project {
+        padding: 1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .checkme-txt , .lynx-txt, .gazoo-txt{
+        text-align: center;
+    }
+    .project-name {
+        text-align: center;
+    }
+    .checkme-image {
+        width: 20rem;
+    }
+    .gazoo-image {
+        width: 8rem;
+    }
+    .serviceContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .service {
+        width: 16rem;
+        margin: 1rem;
+      }
+      .footer-item>.content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, 8rem);    
+      }
+      footer {
+        padding: 2rem;
+      }
+      .media-item{
+        margin: 2px;
+      }
   }
 
   @media screen and (max-width: 600px) {
