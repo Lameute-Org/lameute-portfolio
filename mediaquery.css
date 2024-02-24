@@ -9,6 +9,9 @@
         margin-left: 3%; 
         margin-top: -10%;       
     }
+    .contacts-link{
+        width: 45%;
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -46,7 +49,10 @@
   @media screen and (max-width: 600px) {
     .select-menu .options {
         left: 50%;
-    }    
+    }  
+    .skills {
+    grid-template-columns: 80% 80%;  
     
   }
+}
 /**/

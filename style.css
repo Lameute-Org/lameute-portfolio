@@ -25,7 +25,12 @@ body , html{
   --primary:#2D2D2D;
   --secondary:white;
   --tertiary:#E4AD72;
-  --grey: #ACACAC
+  --grey: #ACACAC;
+  --gold: #F8BA3F;
+  --green: #4BBF28;
+  --purple: #C945EF;
+  --blue:#16B4DC;
+  --red:#D0224E;
 }
 p{
   margin: 0;
@@ -200,17 +205,44 @@ header{
   }
 }
 
+
+
+
 /*styling a section Squad*/
+.caroussel{
+  height: 100vh;
+
+}
 .squad-section{
   height: 100%;
-  background-image: url(./assets/images/wallpaperBak.png);
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
+/*differents background*/
+.bak-section{
+  background-image: url(./assets/images/wallpaperBak.png);
+}
+.pulga-section{
+  background-image: url(./assets/images/Desire.png);
+}
+.emane-section{
+  background-image: url(./assets/images/Emane.png);
+}
+.letlabs-section{
+  background-image: url(./assets/images/Ndjesse.png);
+}
+.matakon-section{
+  background-image: url(./assets/images/Modeste.png);
+}
+.kris-section{
+  background-image: url(./assets/images/Kris.png);
+}
+/*---------------------------------------------------------------------------------------*/
 .title-squad{
   font-family: police_lameute;
   font-size: 3rem;
@@ -224,9 +256,29 @@ header{
 .card-squad-title{
   display: flex;
   flex-direction: column;
-  border-left: solid 8px var(--grey);
   padding-left: 20px;
 }
+/*differents bordures de la card-squad-title*/
+.card-squad-title-bak{
+  border-left: solid 8px var(--grey);
+}
+.card-squad-title-desire{
+  border-left: solid 8px var(--gold);
+}
+.card-squad-title-emane{
+  border-left: solid 8px var(--green);
+}
+.card-squad-title-letlabs{
+  border-left: solid 8px var(--purple);
+}
+.card-squad-title-modeste{
+  border-left: solid 8px var(--blue);
+}
+.card-squad-title-kris{
+  border-left: solid 8px var(--red);
+}
+/*---------------------------------------------------------------------------------------*/
+
 .card-squad-name-member{
   font-family: police_lameute;
   font-size: 2rem;
@@ -237,6 +289,7 @@ header{
   font-size: 1.5rem;
   color: var(--grey);
 }
+
 .contain-description {
   height: 75%;
   display: flex;
@@ -247,8 +300,27 @@ header{
 .card-squad-description{
   font-family: police_ternary;
   font-size: 1.1rem;
+}
+/*differents background*/
+.color-kris{
+  color: var(--red);
+}
+.color-modeste{
+  color: var(--blue);
+}
+.color-letlabs{
+  color: var(--purple);
+}
+.color-emane{
+  color: var(--green);
+}
+.color-desire{
+  color: var(--gold);
+}
+.color-bak{
   color: var(--grey);
 }
+/*---------------------------------------------------------------------------------------*/
 
 .card-squad-desciption-contain {
   height: 95%;
