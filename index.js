@@ -16,3 +16,16 @@ options.forEach((option) => {
     optionMenu.classList.remove("active");
   });
 });
+
+var i = 0;
+var txt = 'LAMEUTE';
+var speed = 400;
+
+function typeLam() {
+  if (i < txt.length) {
+    document.querySelector(".big-title").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeLam, speed);
+  }
+}
+typeLam();

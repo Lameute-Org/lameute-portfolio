@@ -25,12 +25,7 @@ body , html{
   --primary:#2D2D2D;
   --secondary:white;
   --tertiary:#E4AD72;
-  --grey: #ACACAC;
-  --gold: #F8BA3F;
-  --green: #4BBF28;
-  --purple: #C945EF;
-  --blue:#16B4DC;
-  --red:#D0224E;
+  --grey: #ACACAC
 }
 p{
   margin: 0;
@@ -107,6 +102,7 @@ header{
   -webkit-text-stroke: 1.2px var(--tertiary);
   text-shadow: 0px 10px rgba(0, 0, 0, 0.57);
   font-size: 6rem;
+  transition: all .4s ease-out 0s;
 }
 .description{
   text-align: center;
@@ -206,169 +202,169 @@ header{
 }
 
 
-
-
-/*styling a section Squad*/
-.caroussel{
-  height: 100vh;
-
-}
-.squad-section{
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-/*differents background*/
-.bak-section{
-  background-image: url(./assets/images/wallpaperBak.png);
-}
-.pulga-section{
-  background-image: url(./assets/images/Desire.png);
-}
-.emane-section{
-  background-image: url(./assets/images/Emane.png);
-}
-.letlabs-section{
-  background-image: url(./assets/images/Ndjesse.png);
-}
-.matakon-section{
-  background-image: url(./assets/images/Modeste.png);
-}
-.kris-section{
-  background-image: url(./assets/images/Kris.png);
-}
-/*---------------------------------------------------------------------------------------*/
-.title-squad{
-  font-family: police_lameute;
+/*project section*/
+.title-project{
+  font-family: police_lameute !important;
+  -webkit-text-stroke: 1.2px var(--tertiary);
+  color: #38373d;
   font-size: 3rem;
-  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 4rem 0;
 }
-.card-squad-section {
-  width: 85%;
-  height: 75%;
+.project-icone{
+  font-size: 10rem;
+}
+.project-name{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.project-use{
+  line-height: 2rem;
+}
+.checkme-txt , .lynx-txt{
+  text-align: end;
 }
 
-.card-squad-title{
+.gazoo-txt{
+  text-align: start;
+}
+.project{
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding: 1rem 5rem 1rem 5rem;
+}
+.gazoo{
+  flex-direction: row-reverse;
+}
+.chk{
+  color: #008edd;
+  text-align: end;
+}
+.gaz{
+  color: #e67500;
+}
+.lyn {
+  color: #ff0000;
+  text-align: end;
+}
+.project-description{
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  width: 50%;
 }
-/*differents bordures de la card-squad-title*/
-.card-squad-title-bak{
-  border-left: solid 8px var(--grey);
+.checkme-image{
+  width: 27rem;
+  object-fit: cover;
 }
-.card-squad-title-desire{
-  border-left: solid 8px var(--gold);
+.gazoo-image{
+  width: 15rem;
+  object-fit: cover;
 }
-.card-squad-title-emane{
-  border-left: solid 8px var(--green);
-}
-.card-squad-title-letlabs{
-  border-left: solid 8px var(--purple);
-}
-.card-squad-title-modeste{
-  border-left: solid 8px var(--blue);
-}
-.card-squad-title-kris{
-  border-left: solid 8px var(--red);
-}
-/*---------------------------------------------------------------------------------------*/
 
-.card-squad-name-member{
-  font-family: police_lameute;
-  font-size: 2rem;
+/*service section*/
+.lameuteService{
+  height: 100%;
+  background-position: 0% 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
   color: var(--secondary);
+  margin-bottom: 100px;
+  margin-top: 80px;
 }
-.card-squad-color-member{
-  font-family: police_secondary;
+.title-service{
+  font-family: police_lameute !important;
+  -webkit-text-stroke: 1.2px var(--tertiary);
+  color: #38373d;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+.service-icon{
+  font-size: 4rem;
+  color: var(--grey);
+}
+.service-name{
+  font-weight: bold;
   font-size: 1.5rem;
   color: var(--grey);
+  text-align: center;
 }
-
-.contain-description {
-  height: 75%;
+.service-txt{
+  line-height: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: black;
+  font-size: 15px;
+}
+.service{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-left: 30px;
-}
-.card-squad-description{
-  font-family: police_ternary;
-  font-size: 1.1rem;
-}
-/*differents background*/
-.color-kris{
-  color: var(--red);
-}
-.color-modeste{
-  color: var(--blue);
-}
-.color-letlabs{
-  color: var(--purple);
-}
-.color-emane{
-  color: var(--green);
-}
-.color-desire{
-  color: var(--gold);
-}
-.color-bak{
-  color: var(--grey);
-}
-/*---------------------------------------------------------------------------------------*/
-
-.card-squad-desciption-contain {
-  height: 95%;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  border-radius: 4rem;
-  background-color: rgba(0, 0, 0, 0.377);
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  padding: 1rem;
+  transition: all .4s ease-out 0s;
 }
 
-.crd-sqd-dscp-contain-right {
+.service:hover{
+  transform: translateY(-20px);
+}
+
+.service-description{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-image{
+  display: flex;
+}
+.serviceContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 18rem); /* Three equal columns */
   justify-content: space-around;
-  width: 38%;
 }
-.crd-sqd-dscp-contain-left {
-  height: 80%;
+.des-icon, .design{
+  color: #ff0000; 
+}
+.dev-icon, .dev{
+  color: #008edd;
+}
+.trans-d-icon, .trans-d{
+  color: #e67500;
+}
+/*footer*/
+footer{
+  padding: 5rem;
+  background-color: #07060b;
+  color: white;
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* Three equal columns */
+  justify-content: space-around;
+  align-items: start;
+}
+.footer-title{
+  font-weight: bold ;
+  font-size: 20px;
+}
+.logo-footer{
+  width: 100px;
+  height: 100px;
+}
+.footer-item{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+.media_footer{
+  width: 20%;
+  display: flex;
   justify-content: space-between;
-  margin-left: 5%;
-}
-
-.img-card-section {
-  width: 75%;
-}
-.txt-description{
-  font-family: police_secondary;
-  color: var(--secondary);
-  font-size: 1rem;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 80%;
-  width: 48%;
-}
-
-.contain-personal-skill {
-  height: 25%;
-}
-.contacts-link {
-  display: flex;
-  width: 15%;
-  justify-content: space-between;
-}
-i{
-  font-size: 1.3rem !important;
 }
