@@ -146,4 +146,14 @@
       justify-content: space-around;
   } 
   }
+  @media screen and (max-width: 400px) {
+    .carousel .list .item .content {
+      top: 12%;
+      left: 45%;
+      height: 67%;
+  }
+  .contacts-link {
+    width: 36%;
+}
+  }
 /**/
