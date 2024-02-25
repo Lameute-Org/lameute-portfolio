@@ -135,7 +135,7 @@
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
 .carousel .list .item:nth-child(1) .content .des,
-.carousel .list .item:nth-child(1) .content .buttons
+.carousel .list .item:nth-child(1) .content .txt-description
 {
     transform: translateY(50px);
     filter: blur(20px);
@@ -320,13 +320,13 @@
     font-family: police_lameute;
     color: var(--secondary);
   }
-.txt-description{
+/* .txt-description{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
     animation: showContent .5s 10s ease-in 1 forwards;
     animation-delay: 1.2s !important;
-}
+} */
 .contain-personal-skill {
     height: 25%;
   }
