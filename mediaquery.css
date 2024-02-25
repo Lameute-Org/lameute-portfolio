@@ -119,6 +119,11 @@
         top: 10%;
         height: 60%;
     }
+    .content_media {
+      width: 30vw;
+      display: flex;
+      justify-content: space-around;
+  }
   }
 
   @media screen and (max-width: 600px) {
@@ -132,5 +137,13 @@
       width: 50%;
   }
     
+  }
+
+  @media screen and (max-width: 600px) {
+    .content_media {
+      width: 45vw;
+      display: flex;
+      justify-content: space-around;
+  } 
   }
 /**/
