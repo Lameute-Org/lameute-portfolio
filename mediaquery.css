@@ -57,6 +57,7 @@
     header{
         align-items: center;
         justify-content: space-around;     
+        background-position: center center;
     }
     .lameuteAbout{      
         width: 20rem;                
@@ -72,7 +73,7 @@
     .project-description {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 85%;
     }
     .project {
         padding: 1rem;
@@ -80,7 +81,7 @@
         align-items: center;
     }
     .checkme-txt , .lynx-txt, .gazoo-txt{
-        text-align: center;
+        text-align: justify;
     }
     .project-name {
         text-align: center;
