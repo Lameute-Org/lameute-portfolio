@@ -1,0 +1,136 @@
+/*For mobile phones***********************************************************************/
+@media only screen and (min-width:1200px) {
+    body {
+        padding: 0px 15vw;
+    }
+
+    .big-title {
+        font-size: 5rem;
+    }
+
+    .Logo {
+        height: 60vh;
+        width: 60vh;
+    }
+
+    .description {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    #agency p {
+        font-size: 1.1em;
+        line-height: 2em;
+    }
+
+    .carousel {
+        height: 60vh;
+        margin: 3vh 0px;
+    }
+
+    #project h2,
+    #squad h2,
+    #achievements h2,
+    #services h2,
+    #agency h2,
+    #technologies h2 {
+        margin: 7vh 0px;
+    }
+
+    #project ul {
+        width: 40%;
+        gap: 0%;
+        justify-content: space-between;
+        padding: 0px;
+        margin-bottom: 5vh;
+    }
+
+    #project ul li {
+        font-size: 1.2em;
+        padding: 0px;
+    }
+
+    .project-image {
+        height: 250px;
+    }
+
+    .project-name {
+        margin: 15px 0px;
+    }
+
+    .project-description {
+        font-size: 1.1em;
+        max-height: 270px;
+        text-align: left;
+    }
+
+    .project.graphic img {
+        height: 40vh;
+        animation-range: entry 0% cover 20%;
+    }
+
+    dl dt {
+        font-size: 1.4em;
+        margin: 3vh 0px;
+    }
+
+    dl dd {
+        font-size: 1.1em;
+    }
+
+    .thumbnail .item .title {
+        font-size: 1em;
+    }
+
+    .thumbnail .item {
+        height: 120px;
+        animation-range: entry 0% cover 20%;
+    }
+
+    header {
+        font-size: 1em;
+    }
+
+    .footer-item .content div,
+    .footer-item .content p {
+        font-size: 1.3em;
+    }
+
+    .footer-item .content a {
+        display: inline-block;
+        margin-bottom: 1vh;
+        font-size: 1.1em;
+    }
+
+    .slide {
+        margin: 3vh 0px;
+    }
+
+    .logo-footer img {
+        position: absolute;
+        height: 70%;
+        width: 70%;
+        object-fit: contain;
+    }
+
+    .slide div {
+        height: 90px;
+    }
+
+    .slide div img {
+        flex: 0 0 90px;
+    }
+
+}
