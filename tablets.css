@@ -1,0 +1,121 @@
+/*for tablets***************************************************************/
+@media only screen and (min-width:768px) and (max-width:991px) {
+    body {
+        padding: 0% 5%;
+    }
+
+    section {
+        margin-top: 1vh;
+    }
+
+
+    #about {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 10%;
+    }
+
+    .lameuteAbout {
+        width: 90%;
+        align-items: center;
+        flex-grow: 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .service p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .carousel {
+        height: 40vh;
+    }
+
+    .thumbnail {
+        justify-content: start;
+        overflow-y: hidden;
+        margin-top: 1vh;
+    }
+
+    .thumbnail .item {
+        width: 18%;
+        height: 120px;
+    }
+
+    .thumbnail .item::after {
+        display: none;
+    }
+
+    #project ul {
+        width: 40%;
+        gap: 0%;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    #project ul li {
+        font-size: 1em;
+        padding: 0px;
+    }
+
+    .project {
+        width: 48%;
+    }
+
+    .project.graphic img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .slide div {
+        height: 60px;
+    }
+
+    .slide div img {
+        flex: 0 0 60px;
+    }
+
+    .footer-item .content a {
+        display: inline-block;
+        margin-bottom: 1vh;
+        font-size: 1.3em;
+    }
+
+    .logo-footer img {
+        position: absolute;
+        height: 70%;
+        width: 70%;
+        object-fit: contain;
+    }
+
+    .serviceContainer,
+    #agency,
+    h2,
+    p,
+    #technologies,
+    dt,
+    .thumbnail,
+    dd,
+    #squad,
+    .service,
+    .project,
+    #project ul {
+        animation-range: entry 0% cover 20%;
+    }
+
+}
