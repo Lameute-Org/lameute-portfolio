@@ -40,6 +40,7 @@
     font-weight: bold;
     line-height: 1.3em;
     width: 100%;
+    opacity: 0;
 }
 
 /* thumbail */
@@ -117,6 +118,7 @@
     transform: translateY(50px);
     text-align: left;
     animation: showContent 0.3s linear 1 forwards;
+    opacity: 0;
 }
 
 @keyframes showContent {

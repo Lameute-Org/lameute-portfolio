@@ -11,6 +11,10 @@
 
 html {
   background: linear-gradient(to bottom, gainsboro, white 20%, white 92%, gainsboro 100%);
+  /* background-image: url(./image/LAMEUTE.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: contain; */
   /* background-color: #161616; */
   /* color: white; */
 
@@ -305,7 +309,7 @@ h2 span {
   border-bottom: 5px solid #2D65B1;
 }
 
-/* .project-description {
+.project-description {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -326,18 +330,20 @@ h2 span {
   font-weight: bold;
   font-size: 2rem;
 
+
 }
 
 .project-use {
   font-size: 0.9em;
   margin-top: 0;
   text-align: justify;
-} */
+  color: black;
+}
 
 .projectsContainer {
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2%;
 }
@@ -354,7 +360,7 @@ h2 span {
   align-items: center;
   row-gap: 1%;
   align-items: center;
-  /* width: 31%; */
+  width: 31%;
 }
 
 /*  */
@@ -373,16 +379,35 @@ h2 span {
   z-index: 2;
 }
 
+.project-image::before,
+.project-image::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  transform: rotate(40deg);
+  opacity: 0.5;
+  background-color: tomato;
+  border-radius: 10% 20% 20% 40% / 40% 10% 30% 10%;
+}
+
+.project-image::after{
+  transform: rotate(120deg);
+}
+
 .image {
   margin: auto;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   scale: 1;
   z-index: 2;
-  object-fit: contain;
-  /* filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); */
-  /* border-radius: 25px; */
+  object-fit: cover;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+  /* border-radius: 25px;*/
 }
 
 .project.graphic {
@@ -415,8 +440,8 @@ h2 span {
   background-color: #e67500;
 }
 
-.lynx .project-image::before,
-.lynx .project-image::after {
+.wesero .project-image::before,
+.wesero .project-image::after {
   background-color: #ff0000;
 }
 
@@ -432,7 +457,9 @@ h2 span {
 
 
 
-h2, .serviceContainer,
+h2,
+.service,
+#services p,
 #agency p,
 dt,
 .thumbnail .item,
@@ -448,12 +475,12 @@ dd,
 
 @keyframes slidein {
   from {
-    /* opacity: 0; */
+    opacity: 0;
     scale: 0.5;
   }
 
   to {
-    /* opacity: 1; */
+    opacity: 1;
     scale: 1;
   }
 }
@@ -483,7 +510,7 @@ details summary {
   color: #e67500;
 }
 
-.lyn {
+.wesero {
   color: #ff0000;
 }
 
@@ -570,7 +597,7 @@ dl dd {
 
 /*footer*/
 footer {
-  padding: 10vh 0px;
+  padding: 5vh 0px;
 }
 
 .footer-container {
@@ -583,6 +610,9 @@ footer {
 .footer-title {
   font-weight: bold;
   font-size: larger;
+  background: var(--primary);
+  color: transparent;
+  background-clip: text;
 }
 
 .footer-item {
@@ -592,6 +622,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer-item:nth-child(1) {
+  justify-content: center;
 }
 
 .logo-footer img {

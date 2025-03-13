@@ -62,7 +62,7 @@
     }
 
     #project ul {
-        width: 60%;
+        width: 40%;
         gap: 0%;
         justify-content: space-between;
         padding: 0px;
@@ -112,7 +112,6 @@
     .thumbnail,
     dd,
     #squad,
-    #services,
     .service,
     .project,
     #project ul {

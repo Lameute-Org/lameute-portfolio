@@ -40,7 +40,6 @@
     align-items: center;
   }
 
-  .serviceContainer,
   #agency,
   h2,
   p,
@@ -48,8 +47,8 @@
   dt,
   dd,
   #squad,
-  #services,
   .service,
+  #services p,
   .project,
   #project ul {
     animation-range: entry 0% cover 20%;
@@ -125,7 +124,7 @@
   }
 
   #project ul {
-    width: 90%;
+    width: 80%;
     gap: 0%;
     justify-content: space-between;
     padding: 0px;
@@ -169,4 +168,5 @@
   .footer-item p {
     text-align: left;
   }
+
 }
