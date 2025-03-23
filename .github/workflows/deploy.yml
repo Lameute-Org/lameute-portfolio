@@ -27,11 +27,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Debug SSH Key
-        run: |
-          echo "SSH Private Key (first 5 lines):"
-          echo "${{ secrets.SERVER_SSH_KEY }}" | head -n 5
-
       - name: SSH to server
         uses: webfactory/ssh-agent@v0.5.3
         with:
@@ -42,5 +37,5 @@ jobs:
 
       - name: Deploy to server
         run: |
-          ssh -o StrictHostKeyChecking=no bak@${{ secrets.SERVER_HOST }} 'bash -s' < ./deploy.sh
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.SERVER_HOST }} 'bash -s' < ./deploy.sh
           
