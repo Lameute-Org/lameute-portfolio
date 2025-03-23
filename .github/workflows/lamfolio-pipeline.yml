@@ -1,11 +1,10 @@
-name: lamfolio
+name: lamfolio pipeline
 
 on:
   push:
     branches:
       - main
-
-      
+     
 jobs:
   unit-tests:
     runs-on: ubuntu-latest
