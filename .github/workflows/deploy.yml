@@ -37,5 +37,5 @@ jobs:
 
       - name: Deploy to server
         run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.SERVER_HOST }} 'bash -s' < ./deploy.sh
+          ssh -o StrictHostKeyChecking=no bak@${{ secrets.SERVER_HOST }} 'bash -s' < ./deploy.sh
           
