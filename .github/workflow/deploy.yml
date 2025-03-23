@@ -1,0 +1,41 @@
+name: deploy pipeline
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    name: Unit tests
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Running dependencies
+        run: docker compose up -d
+
+  deploy:
+    name: Deploy to Server
+    needs: [ build ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: SSH to server
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
+
+      - name: Add SSH Key to Known Hosts
+        run: ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to server
+        run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.SERVER_HOST }} 'bash -s' < ./deploy.sh
+          
