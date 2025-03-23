@@ -27,6 +27,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Debug SSH Key
+        run: |
+          echo "SSH Private Key (first 5 lines):"
+          echo "${{ secrets.SERVER_SSH_KEY }}" | head -n 5
+
       - name: SSH to server
         uses: webfactory/ssh-agent@v0.5.3
         with:
