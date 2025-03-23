@@ -20,7 +20,7 @@ jobs:
 
   deploy:
     name: Deploy to Server
-    needs: [ build ]
+    needs: [ unit-tests ]
     runs-on: ubuntu-latest
 
     steps:
