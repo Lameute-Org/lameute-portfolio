@@ -11,7 +11,7 @@ else
 fi
 
 # Configuration
-REPO_DIR="lamfolio"  # Remplacez par le chemin absolu du répertoire contenant le projet
+REPO_DIR="lameute-portfolio"  # Remplacez par le chemin absolu du répertoire contenant le projet
 
 # Vérification du répertoire
 if [ ! -d "$REPO_DIR" ]; then
