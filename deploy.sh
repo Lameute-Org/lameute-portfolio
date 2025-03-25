@@ -43,7 +43,7 @@ docker run --rm -v $(pwd)/certbot/conf:/etc/letsencrypt -v $(pwd)/certbot/www:/v
 
 echo "Step 4: Constructing website container..."
 # Construire et démarrer les nouveaux conteneurs
-docker compose up -d my-website --build
+docker compose up -d --build web
 
 echo "Step 4: Destroy all unused containers..."
 docker system prune -f
