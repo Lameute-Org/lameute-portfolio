@@ -11,7 +11,7 @@ else
 fi
 
 # Configuration
-REPO_DIR="lameute-portfolio"  # Remplacez par le chemin absolu du répertoire contenant le projet
+REPO_DIR="lamfolio"  # Remplacez par le chemin absolu du répertoire contenant le projet
 
 # Vérification du répertoire
 if [ ! -d "$REPO_DIR" ]; then
@@ -38,12 +38,9 @@ else
  exit 1
 fi
 
-echo "Step 3: Generate ssl certificates..."
-docker run --rm -v $(pwd)/certbot/conf:/etc/letsencrypt -v $(pwd)/certbot/www:/var/www/certbot certbot/certbot certonly --webroot -w /var/www/certbot -d lameute.cm --email bakehew@gmail.com --agree-tos --no-eff-email
-
-echo "Step 4: Constructing website container..."
+echo "Step 3: Constructing docker containers..."
 # Construire et démarrer les nouveaux conteneurs
-docker compose up -d --build web
+docker compose up -d --build
 
 echo "Step 4: Destroy all unused containers..."
 docker system prune -f
