@@ -9,5 +9,6 @@ services:
       - "443:443"
     volumes:
       - ./public:/usr/share/nginx/html
-      # - ../etc/letsencrypt:/etc/letsencrypt
+      - /etc/letsencrypt/live/lameute.cm/fullchain.pem:/etc/letsencrypt/live/lameute.cm/fullchain.pem
+      - /etc/letsencrypt/live/lameute.cm/privkey.pem:/etc/letsencrypt/live/lameute.cm/privkey.pem
     restart: always
