@@ -38,9 +38,12 @@ else
  exit 1
 fi
 
-echo "Step 3: Constructing docker containers..."
+echo "Step 3: Generate ssl certificates..."
+docker run --rm -v $(pwd)/certbot/conf:/etc/letsencrypt -v $(pwd)/certbot/www:/var/www/certbot certbot/certbot certonly --webroot -w /var/www/certbot -d lameute.cm --email bakehew@gmail.com --agree-tos --no-eff-email
+
+echo "Step 4: Constructing website container..."
 # Construire et démarrer les nouveaux conteneurs
-docker compose up -d --build
+docker compose up -d my-website --build
 
 echo "Step 4: Destroy all unused containers..."
 docker system prune -f
